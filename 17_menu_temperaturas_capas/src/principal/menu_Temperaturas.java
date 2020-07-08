@@ -12,7 +12,7 @@ public class menu_Temperaturas {
 		Scanner sc;
 		sc = new Scanner(System.in);
 		boolean salir = false;
-		int opcion;
+		int opcion; 
 
 		while(!salir) {	
 			menu();

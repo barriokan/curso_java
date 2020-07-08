@@ -35,6 +35,9 @@ public class menu_Temperaturas {
 					salir=true;
 					System.out.println("Salimos de la aplicacion");
 					break;
+				default:
+					System.out.println("La opcion elegida no es valida. Seleccionala de nuevo.");
+					break;
 			}
 		}
 		//sc.close();

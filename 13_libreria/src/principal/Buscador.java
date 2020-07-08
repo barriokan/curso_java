@@ -24,7 +24,7 @@ public class Buscador {
 					System.out.println(titulos);
 					break;
 				case 3:
-					//borrarLibro(titulos);
+					borrarLibro(titulos);
 					System.out.println(titulos);
 					break;
 				case 4:
@@ -69,17 +69,17 @@ public class Buscador {
 		}
 	}
 	
-	//eliminatr titulo
-	String=titulo
-	scanner
-	titulo=sc.scanner+";"
-	int posini;		
-	posini=titulos.indexOf(titulo)//buscamos posicion inical del borrado
-	if(posini != -1) {
-	titulos.delete(posini,posini+titluo.length()+1); //borra por titulo completo
-	else {
-		no existe
+	static void borrarLibro(StringBuilder titulos) {
+		String titulo;
+		Scanner sc2 = new Scanner(System.in);
+		System.out.println("Introduce libro a eliminar: ");
+		titulo=sc2.nextLine()+";";
+		int posini;		
+		posini=titulos.indexOf(titulo);//buscamos posicion inical del borrado
+		if(posini != -1) {
+			titulos.delete(posini,posini+titulo.length()); //borra por titulo completo
+		}else{
+			System.out.println("No existe el libro");
 		}
-	}
 	}
 }
